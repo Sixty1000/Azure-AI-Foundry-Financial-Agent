@@ -78,36 +78,3 @@ class EmailPlugin:
 
 if __name__ == "__main__":
     asyncio.run(main())
-
-# dotenv_path= find_dotenv()
-
-
-
-# client = AzureOpenAI(
-#     api_version=os.getenv("API_VERSION"),
-#     azure_endpoint=os.getenv("ENDPOINT"),
-#     api_key=os.getenv("API_KEY")
-# )
-
-# response = client.chat.completions.create(
-#     messages=[
-#         {
-#             "role": "system",
-#             "content": "Answer the users questions",
-#         },
-#         {
-#             "role": "assistant",
-#             "content": "Create a 5 line story using the systems response.",
-#         },
-#         {
-#             "role": "user",
-#             "content": "ICC Cricket match.",
-#         }
-#     ],
-#     model="gpt-4o",
-#     max_tokens=4096,
-#     temperature=1.0,
-#     top_p=1.0
-# )
-
-# print(response.choices[0].message.content)
