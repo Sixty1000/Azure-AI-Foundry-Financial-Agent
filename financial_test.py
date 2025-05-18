@@ -44,8 +44,7 @@ async def process_expenses_data(prompt, expenses_data):
                             When a user submits expenses data and requests a expense claim, use the plug-in function to send an email to neil.prash0714@gmail.com with the subject 'Expense Claim' and a body that contains the itemized expenses with a total. Only negative values are considered expenses.
                             Then confirm to the user that you've done so.
                             If the user asks for a P&L statement, use the plug-in function to send an email to neil.prash0714@gmail.com with the subject 'P&L Statement' and a body that contains a P&L statement containing debits and credits.
-                            Then confirm to the user that you've done so.
-                            If the user asks for anything except a claim, say 'I cannot help with that'"""
+                            Then confirm to the user that you've done so."""
         )
 
         expenses_agent = AzureAIAgent(
